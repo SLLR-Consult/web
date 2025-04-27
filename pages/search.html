@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suche - TrustTheResearch.org</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">TrustTheResearch.org</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="search.html" class="active">Suche</a></li>
+                    <li><a href="topics.html">Themen</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="about.html">Über Uns</a></li>
+                    <li><a href="#login" class="button-login">Login</a></li>
+                    <li><a href="#signup" class="button-signup">Registrieren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Wissenschaftliche Studien Suchen</h2>
+
+        <div class="search-container-page">
+            <input type="search" id="page-search" placeholder="Geben Sie Ihre Suchbegriffe ein...">
+            <button id="page-search-button">Suchen</button>
+        </div>
+
+        <aside class="filters">
+            <h3>Filter</h3>
+            <div class="filter-group">
+                <label for="subject">Fachgebiet:</label>
+                <select id="subject" name="subject">
+                    <option value="">Alle</option>
+                    <option value="medizin">Medizin</option>
+                    <option value="biologie">Biologie</option>
+                    <option value="physik">Physik</option>
+                    <option value="chemie">Chemie</option>
+                    <option value="sozialwiss">Sozialwissenschaften</option>
+                    </select>
+            </div>
+            <div class="filter-group">
+                <label for="pub-date">Publikationsdatum:</label>
+                <input type="date" id="pub-date-start" name="pub-date-start"> bis
+                <input type="date" id="pub-date-end" name="pub-date-end">
+            </div>
+            <div class="filter-group">
+                <label for="study-type">Studientyp:</label>
+                <select id="study-type" name="study-type">
+                    <option value="">Alle</option>
+                    <option value="rct">RCT</option>
+                    <option value="meta-analysis">Meta-Analyse</option>
+                    <option value="review">Review</option>
+                    </select>
+            </div>
+            <div class="filter-group">
+                 <label><input type="checkbox" name="open-access" value="true"> Nur Open Access</label>
+            </div>
+             <div class="filter-group">
+                <label for="funding">Finanzierungsquelle:</label>
+                <input type="text" id="funding" name="funding" placeholder="z.B. DFG, NIH...">
+            </div>
+            <button class="button-apply-filters">Filter anwenden</button>
+        </aside>
+
+        <section class="search-results">
+            <h3>Suchergebnisse</h3>
+            <p id="results-placeholder"><i>Hier werden die Suchergebnisse angezeigt, nachdem eine Suche durchgeführt wurde.</i></p>
+
+            <article class="result-item">
+                <h4><a href="study-detail-placeholder.html">Titel der Studie hier einfügen...</a></h4>
+                <p class="authors">Autor A, Autor B, Autor C (Jahr)</p>
+                <p class="journal"><i>Journal Name</i>, Vol. X, Iss. Y</p>
+                <div class="result-summary">
+                    <p><b>KI-Zusammenfassung (Beispiel):</b> Diese Studie untersuchte [Hauptthema]. Die Ergebnisse deuten darauf hin, dass [Hauptergebnis]. Die Methodik umfasste [kurze Methodenbeschreibung]...</p>
+                    <span class="ai-disclaimer">(Automatisch generierte Zusammenfassung)</span>
+                </div>
+                <div class="trust-indicators-preview">
+                    <span><i class="icon-peer-review"></i> Peer-Reviewed</span>
+                    <span><i class="icon-journal"></i> Journal IF: 3.5</span>
+                    <span><i class="icon-funding"></i> Finanzierung: Öffentlich</span>
+                    <span><i class="icon-citations"></i> 42 Zitationen</span>
+                    </div>
+                <a href="study-detail-placeholder.html" class="button-details">Details anzeigen</a>
+            </article>
+
+            <article class="result-item">
+                 <h4><a href="study-detail-placeholder.html">Eine weitere spannende Forschungsarbeit</a></h4>
+                 <p class="authors">Forscher X, Forscher Y (Jahr)</p>
+                 <p class="journal"><i>Another Science Journal</i></p>
+                  <div class="result-summary">
+                     <p><b>KI-Zusammenfassung (Beispiel):</b> ... </p>
+                     <span class="ai-disclaimer">(Automatisch generierte Zusammenfassung)</span>
+                 </div>
+                 <div class="trust-indicators-preview">
+                     <span><i class="icon-peer-review"></i> Peer-Reviewed</span>
+                     <span><i class="icon-data"></i> Daten verfügbar</span>
+                      <span><i class="icon-citations"></i> 15 Zitationen</span>
+                 </div>
+                 <a href="study-detail-placeholder.html" class="button-details">Details anzeigen</a>
+            </article>
+            <div class="pagination">
+                <span>Seite:</span>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">10</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+       <div class="container">
+            <p>&copy; 2025 TrustTheResearch.org - Alle Rechte vorbehalten.</p>
+            <ul>
+                <li><a href="#privacy">Datenschutz</a></li>
+                <li><a href="#terms">Nutzungsbedingungen</a></li>
+                <li><a href="about.html#contact">Kontakt</a></li>
+                <li><a href="about.html#transparency">Transparenz & Finanzierung</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
